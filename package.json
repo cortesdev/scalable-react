@@ -28,7 +28,7 @@
     "start:production": "npm run build && npm run start:prod",
     "start:prod": "cross-env NODE_ENV=production node server",
     "pagespeed": "node ./internals/scripts/pagespeed.js",
-    "presetup": "npm i chalk shelljs yarn",
+    "presetup": "npm i chalk shelljs",
     "setup": "node ./internals/scripts/setup.js",
     "postsetup": "npm run build:dll",
     "clean": "shjs ./internals/scripts/clean.js",
@@ -181,7 +181,8 @@
   },
   "dependencies": {
     "babel-polyfill": "6.13.0",
-    "chalk": "^1.1.3",
+    "chalk": "1.1.3",
+    "classnames": "^2.2.5",
     "compression": "1.6.2",
     "express": "4.14.0",
     "fontfaceobserver": "2.0.1",
@@ -193,6 +194,7 @@
     "lodash": "4.15.0",
     "react": "15.3.0",
     "react-dom": "15.3.0",
+    "react-fontawesome": "^1.6.1",
     "react-helmet": "3.1.0",
     "react-intl": "2.1.3",
     "react-redux": "4.4.5",
@@ -205,8 +207,7 @@
     "reselect": "2.5.3",
     "sanitize.css": "4.1.0",
     "warning": "3.0.0",
-    "whatwg-fetch": "1.0.0",
-    "yarn": "^1.12.3"
+    "whatwg-fetch": "1.0.0"
   },
   "devDependencies": {
     "babel-cli": "6.11.4",
@@ -274,7 +275,7 @@
     "pre-commit": "1.1.3",
     "psi": "2.0.4",
     "rimraf": "2.5.4",
-    "shelljs": "^0.7.3",
+    "shelljs": "0.7.3",
     "sinon": "2.0.0-pre",
     "style-loader": "0.13.1",
     "stylelint": "7.1.0",
