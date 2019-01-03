@@ -24,6 +24,5 @@
 .input:focus {
   outline: none;
   border-bottom-color: #00AFCC;
-  transition: width .3s;
   border-bottom-width: 2px;
 }

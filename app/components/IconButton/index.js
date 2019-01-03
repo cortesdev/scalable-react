@@ -6,11 +6,9 @@
 
 import React from 'react';
 import FontAwesome from 'react-fontawesome';
- 
 import classNames from 'classnames';
 import styles from './styles.css';
 
- 
 function IconButton({ onClick, icon, iconClass, buttonClass }) {
   return (
     <div
