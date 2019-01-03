@@ -21,7 +21,6 @@ function Link({ link }) {
           {link.voteCount}
         </div>
       </div>
-
       <div
         className={styles.detailsContainer}
       >
@@ -45,10 +44,10 @@ function Link({ link }) {
 
 Link.propTypes = {
   link: React.PropTypes.shape({
+    voteCount: React.PropTypes.number.isRequired,
     description: React.PropTypes.string.isRequired,
     url: React.PropTypes.string.isRequired,
     id: React.PropTypes.string.isRequired,
-    voteCount: React.PropTypes.number.isRequired,
   }),
 };
 

@@ -1,3 +1,4 @@
+// eslint no-underscore-dangle: "error"
 /**
  * Create the store with asynchronously loaded reducers
  */
@@ -9,7 +10,8 @@ import createSagaMiddleware from 'redux-saga';
 import createReducer from './reducers';
 
 const sagaMiddleware = createSagaMiddleware();
-const devtools = window.devToolsExtension || (() => noop => noop);
+const devtools = window.__REDUX_DEVTOOLS_EXTENSION__ || (() => noop => noop);
+// const devtools = window.devToolsExtension || (() => noop => noop);
 
 export default function configureStore(initialState = {}, history) {
   // Create the store with two middlewares
